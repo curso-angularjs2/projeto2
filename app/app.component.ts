@@ -16,8 +16,9 @@ const USUARIOS: Usuario[] = [
 
 @Component({
   selector: 'projeto2',
-  template: `<h1>Listagem!</h1>
-          <table>
+  template: `
+          <h2>Listagem de usuários</h2>
+          <table class="table table-hover table-striped">
              <tr>
                 <th>
                     Id

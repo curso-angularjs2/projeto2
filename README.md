@@ -157,7 +157,7 @@ export class AppModule { }
     <title>Projeto 2</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
     <script src="node_modules/core-js/client/shim.min.js"></script>
     <script src="node_modules/zone.js/dist/zone.js"></script>
     <script src="node_modules/reflect-metadata/Reflect.js"></script>
@@ -229,31 +229,31 @@ usuarios = USUARIOS;
 Agora também coloque o seguinte html:
 
 ~~~javascript
-template: `<h1>Listagem!</h1>
-        <table>
-           <tr>
-              <th>
-                  Id
-              </th>
-              <th>
-                  Nome
-              </th>
-              <th>
-                  Idade
-              </th>
-           </tr>
-           <tr *ngFor="let usuario of usuarios">
-              <th>
-                  {{usuario.id}}
-              </th>
-              <th>
-                  {{usuario.nome}}
-              </th>
-              <th>
-                  {{usuario.idade}}
-              </th>
-           </tr>
-        </table>
+template: `  <h2>Listagem de usuários</h2>
+  <table class="table table-hover table-striped">
+     <tr>
+        <th>
+            Id
+        </th>
+        <th>
+            Nome
+        </th>
+        <th>
+            Idade
+        </th>
+     </tr>
+     <tr *ngFor="let usuario of usuarios">
+        <th>
+            {{usuario.id}}
+        </th>
+        <th>
+            {{usuario.nome}}
+        </th>
+        <th>
+            {{usuario.idade}}
+        </th>
+     </tr>
+  </table>
 `
 ~~~
 
@@ -280,31 +280,31 @@ const USUARIOS: Usuario[] = [
 
 @Component({
   selector: 'projeto2',
-  template: `<h1>Listagem!</h1>
-          <table>
-             <tr>
-                <th>
-                    Id
-                </th>
-                <th>
-                    Nome
-                </th>
-                <th>
-                    Idade
-                </th>
-             </tr>
-             <tr *ngFor="let usuario of usuarios">
-                <th>
-                    {{usuario.id}}
-                </th>
-                <th>
-                    {{usuario.nome}}
-                </th>
-                <th>
-                    {{usuario.idade}}
-                </th>
-             </tr>
-          </table>
+  template: `  <h2>Listagem de usuários</h2>
+    <table class="table table-hover table-striped">
+       <tr>
+          <th>
+              Id
+          </th>
+          <th>
+              Nome
+          </th>
+          <th>
+              Idade
+          </th>
+       </tr>
+       <tr *ngFor="let usuario of usuarios">
+          <th>
+              {{usuario.id}}
+          </th>
+          <th>
+              {{usuario.nome}}
+          </th>
+          <th>
+              {{usuario.idade}}
+          </th>
+       </tr>
+    </table>
   `
 })
 export class AppComponent {

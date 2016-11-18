@@ -28,7 +28,7 @@ var AppComponent = (function () {
     AppComponent = __decorate([
         core_1.Component({
             selector: 'projeto2',
-            template: "<h1>Listagem!</h1>\n          <table>\n             <tr>\n                <th>\n                    Id\n                </th>\n                <th>\n                    Nome\n                </th>\n                <th>\n                    Idade\n                </th>\n             </tr>\n             <tr *ngFor=\"let usuario of usuarios\">\n                <th>\n                    {{usuario.id}}\n                </th>\n                <th>\n                    {{usuario.nome}}\n                </th>\n                <th>\n                    {{usuario.idade}}\n                </th>\n             </tr>\n          </table>\n  "
+            template: "\n          <h2>Listagem de usu\u00E1rios</h2>\n          <table class=\"table table-hover table-striped\">\n             <tr>\n                <th>\n                    Id\n                </th>\n                <th>\n                    Nome\n                </th>\n                <th>\n                    Idade\n                </th>\n             </tr>\n             <tr *ngFor=\"let usuario of usuarios\">\n                <th>\n                    {{usuario.id}}\n                </th>\n                <th>\n                    {{usuario.nome}}\n                </th>\n                <th>\n                    {{usuario.idade}}\n                </th>\n             </tr>\n          </table>\n  "
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);
